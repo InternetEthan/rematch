@@ -1,39 +1,24 @@
-function Bench() {
-    const week = Array(5).fill(null);
+// import Tasks from "./tasks";
+
+function Bench () {
+    const month = Array(30).fill(null);
+
+    const handleDayClick = (index) => {
+        console.log(index);
+    };
 
     return (
-        <div className="month"> January
-        <div className="week">
-            {week.map((_, index) => ( 
-                <div key={index} className="day">{ index + 1 }</div>
+        <div className="month">
+            <div className="week">
+            {month.map((_, index) => (
+                <div key={index} className="day">
+                    <div>{index + 1}</div>
+                    {/* <Tasks dayIndex={index} /> */}
+                </div>
             ))}
         </div>
-                <div className="week">
-            {week.map((_, index) => ( 
-                <div key={index} className="day">{ index + 6 }</div>
-            ))}
-        </div>
-                <div className="week">
-            {week.map((_, index) => ( 
-                <div key={index} className="day">{ index + 11 }</div>
-            ))}
-        </div>
-                <div className="week">
-            {week.map((_, index) => ( 
-                <div key={index} className="day">{ index + 16 }</div>
-            ))}
-        </div>
-                <div className="week">
-            {week.map((_, index) => ( 
-                <div key={index} className="day">{ index + 21 }</div>
-            ))}
-        </div>
-                <div className="week">
-            {week.map((_, index) => ( 
-                <div key={index} className="day">{ index + 26 }</div>
-            ))}
-        </div>
-        </div>
+    </div>
     );
 }
- export default Bench;
+
+export default Bench;

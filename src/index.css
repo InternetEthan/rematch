@@ -20,13 +20,9 @@ body {
     padding: 0;
     text-align: center;
     height: 250px;
-    width: 18%;
+    width: 20%;
 }
 
-.week {
-    display: flex;
-    justify-content: center;
-}
 
 .month {
     display: flex;
