@@ -1,13 +1,23 @@
-import './App.css';
-import Bench from './components/Bench';
-import Rematch from './components/Rematch';
+import { useState } from 'react'
+import './App.css'
+import Day from './components/Day'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="App">
-      <Bench />
-      <Rematch />
-    </div>
-  );
+    <>
+      <h1>rematch</h1>
+
+      <Day ></Day>
+
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        </div>
+    </>
+  )
 }
-export default App;
+
+export default App
