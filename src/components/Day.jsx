@@ -1,9 +1,11 @@
-function Day() {
+// Day.js
+import React from 'react';
+
+function Day({ day }) {
     return (
-        <>
-            <h1>day</h1>
-            <p>hello</p>
-        </>
+        <div className='card'>
+            <h4>{day}</h4>
+        </div>
     );
 }
 
